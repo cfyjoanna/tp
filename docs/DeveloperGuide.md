@@ -896,7 +896,7 @@ testers are expected to do more *exploratory* testing.
    4. Other incorrect delete commands to try: `hw`, `hw 0`, `hw 1 h/` <br>
       Expected: Similar to previous.
 
-2. Adding homework to a student while in view mode
+2. Adding homework to a person while in view mode
 
    1. Prerequisites: View a single student using the `view` command, e.g. `view Alex Yeoh`. Only one person.
 
@@ -909,7 +909,7 @@ testers are expected to do more *exploratory* testing.
    4. Other incorrect delete commands to try: Similar to adding homework while all students are shown in list mode.<br>
       Expected: Similar to previous.
 
-### Updating lesson plan of a student
+### Updating lesson plan of a person
 
 1. Updating lesson plan of a student while all students are being shown in list mode
 
@@ -927,7 +927,7 @@ testers are expected to do more *exploratory* testing.
    5. Other incorrect delete commands to try: `lesson`, `lesson 1`, `lesson x`, `...` (where x is larger than the list size)<br>
       Expected: Similar to previous.
 
-### Editing a student
+### Editing a person
 
 1. Editing a student while in view mode
 
@@ -942,7 +942,7 @@ testers are expected to do more *exploratory* testing.
    4. Other incorrect delete commands to try: `edit`, `edit 1`, `edit lp/` <br>
       Expected: Similar to previous.
 
-### Viewing a student
+### Viewing a person
 
 1. Viewing a person while all students are being shown
 
@@ -971,3 +971,11 @@ testers are expected to do more *exploratory* testing.
 
    4. Other incorrect delete commands to try: `show`, `show tues`<br>
       Expected: Similar to previous.
+
+### Saving data
+
+1. Dealing with missing/corrupted data files
+
+   1. _{explain how to simulate a missing/corrupted file, and the expected behavior}_
+
+1. _{ more test cases …​ }_
