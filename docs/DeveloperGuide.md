@@ -896,7 +896,7 @@ testers are expected to do more *exploratory* testing.
    4. Other incorrect delete commands to try: `hw`, `hw 0`, `hw 1 h/` <br>
       Expected: Similar to previous.
 
-2. Adding homework to a person while in view mode
+2. Adding homework to a student while in view mode
 
    1. Prerequisites: View a single student using the `view` command, e.g. `view Alex Yeoh`. Only one person.
 
@@ -909,7 +909,7 @@ testers are expected to do more *exploratory* testing.
    4. Other incorrect delete commands to try: Similar to adding homework while all students are shown in list mode.<br>
       Expected: Similar to previous.
 
-### Updating lesson plan of a person
+### Updating lesson plan of a student
 
 1. Updating lesson plan of a student while all students are being shown in list mode
 
@@ -927,7 +927,7 @@ testers are expected to do more *exploratory* testing.
    5. Other incorrect delete commands to try: `lesson`, `lesson 1`, `lesson x`, `...` (where x is larger than the list size)<br>
       Expected: Similar to previous.
 
-### Editing a person
+### Editing a student
 
 1. Editing a student while in view mode
 
@@ -942,9 +942,9 @@ testers are expected to do more *exploratory* testing.
    4. Other incorrect delete commands to try: `edit`, `edit 1`, `edit lp/` <br>
       Expected: Similar to previous.
 
-### Viewing a person
+### Viewing a student
 
-1. Viewing a person while all students are being shown
+1. Viewing a student while all students are being shown
 
    1. Prerequisites: App must be in either view or list mode. Contact named Alex Yeoh exists. No contact named 0 exists.
 
