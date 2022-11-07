@@ -883,93 +883,93 @@ testers are expected to do more *exploratory* testing.
 
 ### Adding homework to a person
 
-1. Adding homework to a person while all persons are being shown in list mode
+1. Adding homework to a person while all students are being shown in list mode
 
   1. Prerequisites: List all persons using the `list` command. Multiple persons in the list.
 
-  1. Test case: `hw 1 h/Science worksheet`<br>
-     Expected: "Science worksheet" homework is added to the first person. Details of updated contact shown in the status message.
+  2. Test case: `hw 1 h/Science worksheet`<br>
+     Expected: "Science worksheet" homework is added to the first student. Details of updated contact shown in the status message.
 
-  1. Test case: `hw 1`<br>
+  3. Test case: `hw 1`<br>
      Expected: No homework is added. Error details shown in the status message.
 
-  1. Other incorrect delete commands to try: `hw`, `hw 0`, `hw 1 h/` <br>
+  4. Other incorrect delete commands to try: `hw`, `hw 0`, `hw 1 h/` <br>
      Expected: Similar to previous.
 
 1. Adding homework to a person while in view mode
 
-  1. Prerequisites: View a single person using the `view` command, e.g. `view Alex Yeoh`. Only one person.
+  1. Prerequisites: View a single student using the `view` command, e.g. `view Alex Yeoh`. Only one person.
 
-  1. Test case: `hw 1 h/Math worksheet`<br>
-     Expected: "Math worksheet" homework is added to the person. Details of updated contact shown in the status message.
+  2. Test case: `hw 1 h/Math worksheet`<br>
+     Expected: "Math worksheet" homework is added to the student. Details of updated contact shown in the status message.
 
-  1. Test case: `hw 2 h/Math worksheet`<br>
+  3. Test case: `hw 2 h/Math worksheet`<br>
      Expected: No homework is added. Error details shown in the status message.
 
-  1. Other incorrect delete commands to try: Similar to adding homework while all persons are shown in list mode.<br>
+  4. Other incorrect delete commands to try: Similar to adding homework while all students are shown in list mode.<br>
      Expected: Similar to previous.
 
 ### Updating lesson plan of a person
 
-1. Updating lesson plan of a person while all persons are being shown
+1. Updating lesson plan of a student while all students are being shown in list mode
 
-  1. Prerequisites: List all persons using the `list` command. Multiple persons in the list.
+  1. Prerequisites: List all students using the `list` command. Multiple students in the list.
 
-  1. Test case: `lesson 1 lp/Biology`<br>
+  2. Test case: `lesson 1 lp/Biology`<br>
      Expected: Lesson plan of first contact is updated to "Biology". Details of the updated contact shown in the status message.
 
-  1. Test case: `lesson 3 lp/Algorithms 0`<br>
+  3. Test case: `lesson 3 lp/Algorithms 0`<br>
      Expected: Lesson plan of third contact is updated to "Algorithms". Details of the updated contact shown in the status message.
 
-  1. Test case: `lesson 1 lp/`<br>
+  4. Test case: `lesson 1 lp/`<br>
      Expected: No lesson plan is updated. Error details shown in the status message.
 
-  1. Other incorrect delete commands to try: `lesson`, `lesson 1`, `lesson x`, `...` (where x is larger than the list size)<br>
+  5. Other incorrect delete commands to try: `lesson`, `lesson 1`, `lesson x`, `...` (where x is larger than the list size)<br>
      Expected: Similar to previous.
 
 ### Editing a person
 
-1. Editing a person while in view mode
+1. Editing a student while in view mode
 
-  1. Prerequisites: App is in view mode of a contact.
+  1. Prerequisites: App is in view mode of a student.
 
-  1. Test case: `edit n/Alice Tan`<br>
+  2. Test case: `edit n/Alice Tan`<br>
      Expected: First contact is deleted from the list. Details of the edited contact shown in the status message.
 
-  1. Test case: `edit 1 n/Alice Tan`<br>
-     Expected: No person is edited. Error details shown in the status message.
+  3. Test case: `edit 1 n/Alice Tan`<br>
+     Expected: No student is edited. Error details shown in the status message.
 
-  1. Other incorrect delete commands to try: `edit`, `edit 1`, `edit lp/` <br>
+  4. Other incorrect delete commands to try: `edit`, `edit 1`, `edit lp/` <br>
      Expected: Similar to previous.
 
 ### Viewing a person
 
-1. Viewing a person while all persons are being shown
+1. Viewing a person while all students are being shown
 
   1. Prerequisites: App must be in either view or list mode. Contact named Alex Yeoh exists. No contact named 0 exists.
 
-  1. Test case: `view Alex yeoh`<br>
+  2. Test case: `view Alex yeoh`<br>
      Expected: Contact named Alex Yeoh is displayed in full view mode. No other contacts are displayed.
 
-  1. Test case: `view 0`<br>
-     Expected: No person is deleted. App returns to list mode. Error details shown in the status message.
+  3. Test case: `view 0`<br>
+     Expected: No student is deleted. App returns to list mode. Error details shown in the status message.
 
-  1. Other incorrect delete commands to try: `view` <br>
+  4. Other incorrect delete commands to try: `view` <br>
      Expected: Similar to previous.
 
 ### Showing a schedule of a day
 
 1. Showing a schedule while in list or view mode
 
-  1. Prerequisites: At least one person has a session added to them. At least one of the sessions added is on Monday.
+  1. Prerequisites: At least one student has a session added to them. At least one of the sessions added is on Monday.
 
-  1. Test case: `show Mon`<br>
+  2. Test case: `show Mon`<br>
      Expected: List of session times on Monday is displayed.
 
-  1. Test case: `show abc`<br>
+  3. Test case: `show abc`<br>
      Expected: No schedule is shown. Error details shown in the status message.
 
-  1. Other incorrect delete commands to try: `show`, `show tues`<br>
+  4. Other incorrect delete commands to try: `show`, `show tues`<br>
      Expected: Similar to previous.
 
 ### Saving data
